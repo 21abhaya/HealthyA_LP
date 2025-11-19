@@ -18,16 +18,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ajnalab.com'),
-  title: {
-    default: 'Ajna Lab',
-    template: '%s | Ajna Lab',
-  },
-  description: 'Your Partner for HealthTech Innovation',
+  title: 'Healthy Ayush',
+  description: 'Healthy Ayush is a complete healthcare management system that enables local governments to deliver accessible, efficient, and data-driven healthcare for their citizens.',
   keywords: [
+    'Healthy Ayush',
+    'Municipal Health',
+    'Healthcare',
     'HealthTech',
-    'Digital Health',
-    'Healthcare IT',
-    'Software Development',
+    'Public Health',
+    'Digital Healthcare',
+    'Health Management System',
+    'Local Government Health',
   ],
   robots: {
     index: true,
@@ -99,7 +100,7 @@ export default function RootLayout({
           `}
         </Script>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
         <GoToTop />
       </body>
