@@ -127,12 +127,12 @@ const MobileNav: FC<MobileNavProps> = ({ navItems, isOpen, setIsOpen }) => {
             ))}
             <motion.li className="mt-6" variants={mobileLinkVariants}>
               <Link
-                href="https://ajnalab.com/contact"
+                href="https://https://demo.healthyayush.com/en/accounts/login/.com/contact"
                 target='_blank'
                 className="block text-center w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+                Get Started
               </Link>
             </motion.li>
           </motion.ul>

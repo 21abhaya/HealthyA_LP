@@ -179,13 +179,13 @@ const DesktopNav: FC<DesktopNavProps> = ({ navItems }) => {
       </ul>
       <div className="hidden lg:flex items-center">
         <motion.a
-          href="https://ajnalab.com/contact"
+          href="https://https://demo.healthyayush.com/en/accounts/login/.com/contact"
           target='_blank'
           className="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:bg-blue-700 transition-all"
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.98 }}
         >
-          Contact Us
+          Get Started
         </motion.a>
       </div>
     </>
