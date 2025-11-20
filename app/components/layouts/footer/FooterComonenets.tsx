@@ -65,7 +65,7 @@ function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-200 font-sans">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-12">
           <div className="space-y-8 xl:col-span-1 mb-10 xl:mb-0 text-center xl:text-left">
             <Link
