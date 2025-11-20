@@ -45,9 +45,9 @@ const footerSectionsData = [
   {
     title: 'Legal',
     links: [
-      { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Terms of Service', href: '/terms-of-service' },
-      { label: 'GDPR', href: '/gdpr' },
+      { label: 'Privacy Policy', href: 'https://ajnalab.com/privacy-policy', target: '_blank' },
+      { label: 'Terms of Service', href: 'https://ajnalab.com/terms-of-service', target: '_blank' },
+      { label: 'GDPR', href: 'https://ajnalab.com/gdpr', target: '_blank' },
     ],
   },
 ]
