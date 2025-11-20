@@ -127,7 +127,7 @@ const MobileNav: FC<MobileNavProps> = ({ navItems, isOpen, setIsOpen }) => {
             ))}
             <motion.li className="mt-6" variants={mobileLinkVariants}>
               <Link
-                href="https://https://demo.healthyayush.com/en/accounts/login/"
+                href="https://demo.healthyayush.com/en/accounts/login/"
                 target='_blank'
                 className="block text-center w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all"
                 onClick={() => setIsOpen(false)}
