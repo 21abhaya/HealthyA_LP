@@ -97,7 +97,7 @@ const SolutionsSection = () => {
         </h3>
 
         <div ref={scrollRef} className="hidden lg:flex mt-24 relative">
-          <div className="w-20 flex-shrink-0 relative">
+          <div className="w-20 shrink-0 relative">
             <div className="sticky top-40 h-[500px]">
               <div className="w-1 h-full bg-slate-700/50 rounded-full" />
               <motion.div
@@ -107,7 +107,7 @@ const SolutionsSection = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex-shrink-0 pr-12">
+          <div className="w-1/3 shrink-0 pr-12">
             {solutions.map((solution, index) => (
               <div key={index} className="h-[500px] flex items-center">
                 <motion.div
@@ -133,7 +133,7 @@ const SolutionsSection = () => {
             ))}
           </div>
 
-          <div className="w-1/2 flex-grow relative">
+          <div className="w-1/2 grow relative">
             <div className="sticky top-40 h-[500px]">
               <AnimatePresence>
                 {solutions.map(

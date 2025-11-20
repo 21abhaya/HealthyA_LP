@@ -9,7 +9,9 @@ export const metadata = {
 
 export default function AjnaHOSEnterprisePage(){
   return (
-    <><PalikaCareContent />
-    <PalikaCareJsonLd /></>
+    <>
+    <PalikaCareContent />
+    {/* <PalikaCareJsonLd /> */}
+    </>
 )
 }

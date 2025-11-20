@@ -16,61 +16,61 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ajnalab.com'),
-  title: 'Healthy Ayush',
-  description: 'Healthy Ayush is a complete healthcare management system that enables local governments to deliver accessible, efficient, and data-driven healthcare for their citizens.',
-  keywords: [
-    'Healthy Ayush',
-    'Municipal Health',
-    'Healthcare',
-    'HealthTech',
-    'Public Health',
-    'Digital Healthcare',
-    'Health Management System',
-    'Local Government Health',
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
-  openGraph: {
-    title: 'Ajna Lab',
-    description: 'Your Partner for HealthTech Innovation',
-    url: 'https://www.ajnalab.com',
-    siteName: 'Ajna Lab',
-    images: [
-      {
-        url: '/assets/images/logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'Ajna Lab Logo',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ajna Lab',
-    description: 'Your Partner for HealthTech Innovation',
-    images: ['/assets/images/logo.png'],
-    site: '@AjnaLab',
-    creator: '@AjnaLab',
-  },
-}
+// export const metadata: Metadata = {
+//   metadataBase: new URL('https://www.ajnalab.com'),
+//   title: 'Healthy Ayush',
+//   description: 'Healthy Ayush is a complete healthcare management system that enables local governments to deliver accessible, efficient, and data-driven healthcare for their citizens.',
+//   keywords: [
+//     'Healthy Ayush',
+//     'Municipal Health',
+//     'Healthcare',
+//     'HealthTech',
+//     'Public Health',
+//     'Digital Healthcare',
+//     'Health Management System',
+//     'Local Government Health',
+//   ],
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       'max-video-preview': -1,
+//       'max-image-preview': 'large',
+//       'max-snippet': -1,
+//     },
+//   },
+//   icons: {
+//     icon: '/favicon.ico',
+//     shortcut: '/favicon.ico',
+//     apple: '/apple-touch-icon.png',
+//   },
+//   openGraph: {
+//     title: 'Ajna Lab',
+//     description: 'Your Partner for HealthTech Innovation',
+//     url: 'https://www.ajnalab.com',
+//     siteName: 'Ajna Lab',
+//     images: [
+//       {
+//         url: '/assets/images/logo.png',
+//         width: 1200,
+//         height: 630,
+//         alt: 'Ajna Lab Logo',
+//       },
+//     ],
+//     locale: 'en_US',
+//     type: 'website',
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     title: 'Ajna Lab',
+//     description: 'Your Partner for HealthTech Innovation',
+//     images: ['/assets/images/logo.png'],
+//     site: '@AjnaLab',
+//     creator: '@AjnaLab',
+//   },
+// }
 
 export const viewport: Viewport = {
   width: 'device-width',

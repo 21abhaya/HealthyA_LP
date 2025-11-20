@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
-import Logos from '../../../../public/assets/images/logo.png'
+import Logos from '../../../../public/assets/images/healthy_ayush_logo.png'
 import { navItemsData } from '../../../lib/navData'
 import DesktopNav from './components/DesktopNav'
 import MobileNav from './components/MobileNav'
@@ -40,7 +40,7 @@ const Header: FC = () => {
         >
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
             <Link href="/" className="shrink-0">
-              <Image src={Logos} width={48} height={48} alt="Ajna Lab Logo" />
+              <Image src={Logos} width={100} height={48} alt="Ajna Lab Logo" />
             </Link>
 
             <DesktopNav navItems={navItemsData} />

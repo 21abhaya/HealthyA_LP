@@ -101,7 +101,8 @@ export default function PalikaCareContent() {
                 className="mt-10 flex justify-center lg:justify-start gap-4"
               >
                 <a
-                  href="/book-a-demo?solution=palika-care"
+                  href="https://ajnalab.com/book-a-demo?solution=palika-care"
+                  target='_blank'
                   className="inline-flex items-center justify-center rounded-lg bg-teal-600 px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-teal-700 transition-all hover:-translate-y-1"
                 >
                   Request a Demo <FiArrowRight className="ml-2" />
@@ -341,7 +342,8 @@ export default function PalikaCareContent() {
             </p>
             <div className="mt-10">
               <a
-                href="/book-a-demo?solution=palika-care"
+                href="https://ajnalab.com/book-a-demo?solution=palika-care"
+                target='_blank'
                 className="inline-flex items-center rounded-lg bg-teal-600 px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-teal-700 transition-all hover:-translate-y-1"
               >
                 Request a Demo <FiArrowRight className="ml-2" />

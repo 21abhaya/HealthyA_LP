@@ -8,7 +8,8 @@ import {
   FaLinkedinIn,
 } from 'react-icons/fa'
 import Image from 'next/image'
-import Logos from '../../../../public/assets/images/logo.png'
+import Logos from '../../../../public/assets/images/healthy_ayush_logo.png'
+import Ajna_Lab_Logo from '../../../../public/assets/images/logo.png'
 import Link from 'next/link'
 
 const footerSectionsData = [
@@ -68,35 +69,53 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-12">
           <div className="space-y-8 xl:col-span-1 mb-10 xl:mb-0 text-center xl:text-left">
-            <Link
-              href="/"
-              className="inline-block focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-md"
-            >
-              <Image
-                className="h-16 w-auto mx-auto xl:mx-0"
-                src={Logos}
-                alt="Ajna Lab Technology Logo"
-              />
-            </Link>
-            <p className="text-gray-600 text-base leading-relaxed max-w-xs mx-auto xl:mx-0">
-              Inner Vision. Outer Impact.
-            </p>
-            <div className="flex justify-center xl:justify-start space-x-5">
-              {socialLinksData.map(social => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-indigo-600 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-indigo-500 rounded-full p-2"
-                  aria-label={social.label}
+            <div className="flex flex-col items-center xl:items-start gap-3 w-full">
+              <Link
+                href="/"
+                className="inline-block focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-md"
+              >
+                <Image
+                  className="h-16 w-auto mx-auto xl:mx-0"
+                  src={Logos}
+                  alt="Healthy Ayush Logo"
+                />
+              </Link>
+              <div className="flex items-center gap-2 xl:ml-20">
+                <p className="text-gray-600 text-sm font-medium">
+                  By
+                </p>
+                <Link
+                  href="https://ajnalab.com/"
+                  target='_blank'
                 >
-                  <social.icon className="h-6 w-6" />
-                </a>
-              ))}
+                <Image
+                    className="h-12 w-auto mx-auto xl:mx-0"
+                    src={Ajna_Lab_Logo}
+                    alt="Ajna Lab Logo"
+                  />
+                </Link>
+              </div>
+              {/* <p className="text-gray-600 text-center mt-4 xl:text-left">
+                Healthy Ayush is a complete healthcare management system that enables 
+                local governments to deliver accessible, efficient, <br />and data-driven healthcare 
+                for their citizens.
+              </p> */}
+              <div className="flex justify-center mt-4 xl:justify-start space-x-5">
+                {socialLinksData.map(social => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-indigo-600 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-indigo-500 rounded-full p-2"
+                    aria-label={social.label}
+                  >
+                    <social.icon className="h-6 w-6" />
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-
+          </div>      
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 xl:col-span-2">
             {footerSectionsData.map(section => (
               <div key={section.title}>
@@ -123,7 +142,7 @@ function Footer() {
 
         <div className="mt-12 lg:mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-500">
-            © {currentYear} Ajna Lab Pvt. Ltd. All Rights Reserved.
+            © {currentYear} Healthy Ayush. All Rights Reserved.
           </p>
         </div>
       </div>
