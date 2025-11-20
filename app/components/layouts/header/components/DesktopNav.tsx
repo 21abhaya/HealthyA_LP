@@ -19,7 +19,7 @@ const MegaMenu: FC<{
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 15 }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="absolute left-1/2 -translate-x-1/2 mt-4 w-screen max-w-4xl z-[110]"
+      className="absolute left-1/2 -translate-x-1/2 mt-4 w-screen max-w-4xl z-110"
     >
       <div className="bg-white shadow-2xl rounded-lg border border-slate-200/80 overflow-hidden">
         <div className="grid grid-cols-12">

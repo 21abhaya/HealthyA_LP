@@ -13,32 +13,33 @@ import Link from 'next/link'
 
 const footerSectionsData = [
   {
-    title: 'Company',
+    title: 'Healthy Ayush',
     links: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Contact Us', href: '/contact' },
-      // { label: 'Book a meeting', href: '/book-a-demo' },
-      { label: 'Request a Demo', href: '/book-a-demo' },
-      { label: 'Careers', href: '/careers' },
+      { label: 'Home', href: '/' },
+      { label: 'Features', href: '/#features' },
+      { label: 'Benefits', href: '/#benefits' },
+      { label: 'FAQ', href: '/#faq' },
+      { label: 'Request a Demo', href: '/#demo' },
     ],
   },
   {
-    title: 'Services',
+    title: 'About',
     links: [
-      { label: 'Custom Software Development', href: '/services/custom-software-development' },
-      { label: 'Healthcare Technology', href: '/services/healthcare-technology' },
-      { label: 'Mobile Application Development', href: '/services/mobile-application-development' },
-      { label: 'Consultation Services', href: '/services/consultation-services' },
+      { label: 'Our Company', href: 'https://ajnalab.com/', target: '_blank' },
+      { label: 'Our Services', href: 'https://ajnalab.com/services', target: '_blank' },
+      { label: 'Ajna In Healthcare', href: 'https://ajnalab.com/services/healthcare-technology', target: '_blank' },
+      { label: 'Ajna hOS', href: 'https://ajnalab.com/hospital-product/ajna-hos-enterprise', target: '_blank' },
+      { label: 'Careers', href: 'https://ajnalab.com/careers', target: '_blank' },
     ],
   },
   {
     title: 'hOS',
     links: [
-      { label: 'Healthy Ayush', href: '/hospital-product/palika-care' },
-      { label: 'Clinic Pro', href: '/hospital-product/clinic-pro' },
-      { label: 'Clinic Care', href: '/hospital-product/clinic-care' },
-      { label: 'hOS Standard Edition', href: '/hospital-product/ajna-hos-standard' },
-      { label: 'hOS Enterprise Edition', href: '/hospital-product/ajna-hos-enterprise' },
+      { label: 'Healthy Ayush', href: '/' },
+      { label: 'Clinic Pro', href: 'https://ajnalab.com/hospital-product/clinic-pro', target: '_blank' },
+      { label: 'Clinic Care', href: 'https://ajnalab.com/hospital-product/clinic-care', target: '_blank' },
+      { label: 'hOS Standard Edition', href: 'https://ajnalab.com/hospital-product/ajna-hos-standard' },
+      { label: 'hOS Enterprise Edition', href: 'https://ajnalab.com/hospital-product/ajna-hos-enterprise' },
     ],
   },
   {
@@ -64,7 +65,7 @@ function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-200 font-sans">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-12">
           <div className="space-y-8 xl:col-span-1 mb-10 xl:mb-0 text-center xl:text-left">
             <Link
@@ -107,6 +108,7 @@ function Footer() {
                     <li key={link.label}>
                       <a
                         href={link.href}
+                        target={link.target ? link.target : '_self'}
                         className="text-base text-gray-600 hover:text-indigo-600 hover:underline focus:outline-none focus:underline focus:text-indigo-700 transition-colors"
                       >
                         {link.label}

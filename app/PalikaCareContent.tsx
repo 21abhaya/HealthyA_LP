@@ -127,7 +127,7 @@ export default function PalikaCareContent() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32 bg-slate-50">
+      <section id="features" className="py-24 sm:py-32 bg-slate-50">
         <div className="w-full lg:w-[80%] mx-auto px-6">
           <motion.div
             className="text-center max-w-3xl mx-auto mb-16"
@@ -178,7 +178,7 @@ export default function PalikaCareContent() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32 bg-white">
+      <section id="impact" className="py-24 sm:py-32 bg-white">
         <div className="w-full lg:w-[80%] mx-auto px-6">
           <motion.div
             className="text-center max-w-3xl mx-auto mb-16"
@@ -226,7 +226,7 @@ export default function PalikaCareContent() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32 bg-slate-50">
+      <section id="benefits" className="py-24 sm:py-32 bg-slate-50">
         <div className="w-full lg:w-[80%] mx-auto px-6 space-y-24">
           {benefits.map((benefit, index) => (
             <motion.div
@@ -283,7 +283,7 @@ export default function PalikaCareContent() {
       </section>
 
       {/* NEW FAQ Section */}
-      <section className="py-24 sm:py-32 bg-white">
+      <section id="faq" className="py-24 sm:py-32 bg-white">
         <div className="w-full lg:w-[80%] mx-auto px-6">
           <motion.div
             className="text-center max-w-3xl mx-auto mb-16"
@@ -324,7 +324,7 @@ export default function PalikaCareContent() {
         </div>
       </section>
 
-      <section className="bg-slate-900">
+      <section id="demo" className="bg-slate-900">
         <div className="w-full lg:w-[80%] mx-auto px-6 py-20 sm:py-24 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
